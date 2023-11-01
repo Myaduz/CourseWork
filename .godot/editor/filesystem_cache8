@@ -1,70 +1,71 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698838878
-160x160 background tilemap.png::CompressedTexture2D::5218576862163762070::1693151710::1693753023::1::::<><>::
-Basic Tilemap.png::CompressedTexture2D::1360458629580948206::1693151710::1693753023::1::::<><>::
-Character Idle 48x48.png::CompressedTexture2D::280502003121522734::1693151710::1693753015::1::::<><>::
-export_presets.cfg::TextFile::-1::1697019640::0::1::::<><>::
-game.gd::GDScript::-1::1697018966::0::1::::<>Node2D<>::
-game.tscn::PackedScene::5717690827740596887::1698327413::0::1::::<><>::res://game.gd<>uid://034wwpp5ujls
-icon.svg::CompressedTexture2D::6520645394776167694::1693142351::1693142361::1::::<><>::
-run cycle 48x48.png::CompressedTexture2D::3757637582256914533::1693151710::1693753015::1::::<><>::
-::res://assets/::1698838757
-button-Sheet.png::CompressedTexture2D::5078227939773137091::1693206372::1693206387::1::::<><>::
-new_tile_set.tres::TileSet::1609567095299339752::1698838757::0::1::::<><>::uid://tnas4omlxt3c::::res://Basic Tilemap.png
-Player Crouch-Idle 48x48.png::CompressedTexture2D::4796037686200351427::1693151710::1693752942::1::::<><>::
-player crouch-walk 48x48.png::CompressedTexture2D::6864657155529800275::1693151710::1693752942::1::::<><>::
-player jump 48x48.png::CompressedTexture2D::574774633078963855::1693151710::1693752942::1::::<><>::
-PlayerWalk 48x48.png::CompressedTexture2D::1690053487856383838::1693151711::1693752949::1::::<><>::
-::res://autoload/::1698838762
-clone_manager.tscn::PackedScene::3118179746030030644::1698838762::0::1::::<><>::res://clone/CloneManager.gd
-LevelManager.gd::GDScript::-1::1693752763::0::1::::LevelManager<>Node2D<>::
-::res://clone/::1698838769
-clone.gd::GDScript::-1::1693584102::0::1::::Clone<>Player<>::
-clone.gdshader::Shader::-1::1698838769::0::1::::<><>::
-clone.tscn::PackedScene::393660443402308402::1698327413::0::1::::<><>::uid://034wwpp5ujls
-CloneManager.gd::GDScript::-1::1697019083::0::1::::CloneManager<>Node2D<>::
-::res://interactables/::1698838762
-Door.gd::GDScript::-1::1693407109::0::1::::Door<>Switch<>::
-Door.tscn::PackedScene::3100981279334217747::1698838762::0::1::::<><>::res://interactables/Door.gd<>uid://cy5wcu8m15wda::::res://icon.svg
-floor_button.gd::GDScript::-1::1693408367::0::1::::FloorButton<>Interactable<>::
-floor_button.tscn::PackedScene::1311303471178675117::1698838762::0::1::::<><>::res://interactables/floor_button.gd<>uid://cel6w4dkymmqt::::res://assets/button-Sheet.png
-interactable.gd::GDScript::-1::1693402212::0::1::::Interactable<>Node2D<>::
-Switch.gd::GDScript::-1::1693402628::0::1::::Switch<>Node2D<>::
-Win.gd::GDScript::-1::1693990714::0::1::::<>Area2D<>::
-Win.tscn::PackedScene::2720032545792911276::1698328648::0::1::::<><>::uid://cel6w4dkymmqt
-::res://player/::1698838763
-crouch_platform_collision.tres::RectangleShape2D::3229132434130579163::1693306231::0::1::::<><>::
-Player.gd::GDScript::-1::1698838757::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::1814324927728806220::1698838763::0::1::::<><>::res://player/Player.gd<>uid://dxh25akf8p6cu::::res://player/player_stand_collision.tres<>uid://d843ea1v3c27::::res://Character Idle 48x48.png<>uid://calibmhpgb4jv::::res://assets/Player Crouch-Idle 48x48.png<>uid://c42j5u4214yj0::::res://assets/player crouch-walk 48x48.png<>uid://igoppddqrsex::::res://assets/player jump 48x48.png<>uid://btsh0hy4lbj0x::::res://run cycle 48x48.png<>uid://cha0lj2yixnwa::::res://player/stand_platform_collision.tres
-player_crouch_collision.tres::RectangleShape2D::1094889662684153952::1698838757::0::1::::<><>::
-player_stand_collision.tres::RectangleShape2D::8789749047374253692::1693305188::0::1::::<><>::
-stand_platform_collision.tres::RectangleShape2D::5265701356926475416::1693305802::0::1::::<><>::
-::res://scenes/::1698838757
-default_theme.tres::Theme::2458540496481994543::1693749548::0::1::::<><>::
-HelpScreen.gd::GDScript::-1::1693752142::0::1::::<>Control<>::
-HelpScreen.tscn::PackedScene::7025095545971933501::1698267474::0::1::::<><>::uid://bba62kapso2gh
-HelpScreenScene.tscn::PackedScene::4198593503045965801::1698267473::0::1::::<><>::uid://bba62kapso2gh
-Level.gd::GDScript::-1::1693752601::0::1::::Level<>Node2D<>::
-level.tscn::PackedScene::2275289470917870249::1698267474::0::1::::<><>::res://scenes/Level.gd<>uid://w6xlne4o2vuu
-LevelSelectScreen.gd::GDScript::-1::1698838757::0::1::::<>Control<>::
-LevelSelectScreen.tscn::PackedScene::8774780059861435978::1698267473::0::1::::<><>::uid://bba62kapso2gh
-MainMenu.tscn::PackedScene::3103728150581549500::1698267473::0::1::::<><>::uid://bba62kapso2gh
-PauseMenu.gd::GDScript::-1::1693748652::0::1::::PauseMenu<>Control<>::
-::res://scenes/levels/::1698838762
-level_1.tscn::PackedScene::2976499045564012812::1698838762::0::1::::<><>::uid://7ofxkbuy7g7r::::res://scenes/level.tscn<>uid://be0uskwhj77q3::::res://interactables/Win.tscn
-level_2.tscn::PackedScene::4900134597222547151::1698838762::0::1::::<><>::uid://7ofxkbuy7g7r::::res://scenes/level.tscn<>uid://sxg8g60wx1gb::::res://interactables/floor_button.tscn<>uid://bkgeydfjgqk6n::::res://interactables/Door.tscn<>uid://be0uskwhj77q3::::res://interactables/Win.tscn
-level_3.tscn::PackedScene::4906478956096553680::1698838762::0::1::::<><>::uid://7ofxkbuy7g7r::::res://scenes/level.tscn<>uid://sxg8g60wx1gb::::res://interactables/floor_button.tscn<>uid://bkgeydfjgqk6n::::res://interactables/Door.tscn<>uid://be0uskwhj77q3::::res://interactables/Win.tscn
-::res://shared/::1698686200
-CloneHistory.gd::GDScript::-1::1693583886::0::1::::CloneHistory<>Node<>::
-CustomInput.gd::GDScript::-1::1698262912::0::1::::CustomInput<>Node<>::
-::res://ui/::1698686200
-default_theme.tres::Theme::2458540496481994543::1698326546::0::1::::<><>::
-::res://ui/buttons/::1698838757
-Button.tscn::PackedScene::729614382051492570::1698267473::0::1::::<><>::res://ui/buttons/ButtonUI.gd
-ButtonUI.gd::GDScript::-1::1693749519::0::1::::ButtonUI<>Button<>::
-LevelButton.gd::GDScript::-1::1693749404::0::1::::<>ButtonUI<>::
-LevelButton.tscn::PackedScene::4156253440409406064::1698267473::0::1::::<><>::res://ui/buttons/LevelButton.gd
-QuitButton.gd::GDScript::-1::1693714852::0::1::::<>Button<>::
-QuitButton.tscn::PackedScene::392336088367836729::1698267473::0::1::::<><>::res://ui/buttons/QuitButton.gd
-SceneButton.gd::GDScript::-1::1698838757::0::1::::<>ButtonUI<>::
-SceneButton.tscn::PackedScene::5721696678492572181::1698241412::0::1::::<><>::res://ui/buttons/SceneButton.gd
+::res://::1698845447
+160x160 background tilemap.png::CompressedTexture2D::5218576862163762070::1698841658::1698841658::1::::<><>::
+Basic Tilemap.png::CompressedTexture2D::1360458629580948206::1698841658::1698841658::1::::<><>::
+Character Idle 48x48.png::CompressedTexture2D::280502003121522734::1698841658::1698841658::1::::<><>::
+export_presets.cfg::TextFile::-1::1698843344::0::1::::<><>::
+game.gd::GDScript::-1::1698841658::0::1::::<>Node2D<>::
+game.tscn::PackedScene::5717690827740596887::1698841658::0::1::::<><>::res://game.gd<>uid://034wwpp5ujls
+icon.svg::CompressedTexture2D::6520645394776167694::1698841658::1698841658::1::::<><>::
+run cycle 48x48.png::CompressedTexture2D::3757637582256914533::1698841658::1698841658::1::::<><>::
+::res://assets/::1698843843
+button-Sheet.png::CompressedTexture2D::5078227939773137091::1698841664::1698841664::1::::<><>::
+new_tile_set.tres::TileSet::1609567095299339752::1698841797::0::1::::<><>::uid://tnas4omlxt3c::::res://Basic Tilemap.png
+Player Crouch-Idle 48x48.png::CompressedTexture2D::4796037686200351427::1698841664::1698841664::1::::<><>::
+player crouch-walk 48x48.png::CompressedTexture2D::6864657155529800275::1698841664::1698841664::1::::<><>::
+player jump 48x48.png::CompressedTexture2D::574774633078963855::1698841664::1698841664::1::::<><>::
+PlayerWalk 48x48.png::CompressedTexture2D::1690053487856383838::1698841664::1698841664::1::::<><>::
+::res://autoload/::1698843843
+clone_manager.tscn::PackedScene::3118179746030030644::1698842331::0::1::::<><>::res://clone/CloneManager.gd
+LevelManager.gd::GDScript::-1::1698841664::0::1::::LevelManager<>Node2D<>::
+::res://build/::1698843343
+::res://clone/::1698843843
+clone.gd::GDScript::-1::1698841665::0::1::::Clone<>Player<>::
+clone.gdshader::Shader::-1::1698843814::0::1::::<><>::
+clone.tscn::PackedScene::393660443402308402::1698841665::0::1::::<><>::uid://034wwpp5ujls
+CloneManager.gd::GDScript::-1::1698841665::0::1::::CloneManager<>Node2D<>::
+::res://interactables/::1698843843
+Door.gd::GDScript::-1::1698841665::0::1::::Door<>Switch<>::
+Door.tscn::PackedScene::3100981279334217747::1698842331::0::1::::<><>::res://interactables/Door.gd<>uid://cy5wcu8m15wda::::res://icon.svg
+floor_button.gd::GDScript::-1::1698841665::0::1::::FloorButton<>Interactable<>::
+floor_button.tscn::PackedScene::1311303471178675117::1698842331::0::1::::<><>::res://interactables/floor_button.gd<>uid://cel6w4dkymmqt::::res://assets/button-Sheet.png
+interactable.gd::GDScript::-1::1698841665::0::1::::Interactable<>Node2D<>::
+Switch.gd::GDScript::-1::1698841665::0::1::::Switch<>Node2D<>::
+Win.gd::GDScript::-1::1698841665::0::1::::<>Area2D<>::
+Win.tscn::PackedScene::2720032545792911276::1698841665::0::1::::<><>::uid://cel6w4dkymmqt
+::res://player/::1698843843
+crouch_platform_collision.tres::RectangleShape2D::3229132434130579163::1698841665::0::1::::<><>::
+Player.gd::GDScript::-1::1698841665::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::1814324927728806220::1698842331::0::1::::<><>::res://player/Player.gd<>uid://dxh25akf8p6cu::::res://player/player_stand_collision.tres<>uid://d843ea1v3c27::::res://Character Idle 48x48.png<>uid://calibmhpgb4jv::::res://assets/Player Crouch-Idle 48x48.png<>uid://c42j5u4214yj0::::res://assets/player crouch-walk 48x48.png<>uid://igoppddqrsex::::res://assets/player jump 48x48.png<>uid://btsh0hy4lbj0x::::res://run cycle 48x48.png<>uid://cha0lj2yixnwa::::res://player/stand_platform_collision.tres
+player_crouch_collision.tres::RectangleShape2D::1094889662684153952::1698841797::0::1::::<><>::
+player_stand_collision.tres::RectangleShape2D::8789749047374253692::1698841665::0::1::::<><>::
+stand_platform_collision.tres::RectangleShape2D::5265701356926475416::1698841665::0::1::::<><>::
+::res://scenes/::1698843843
+default_theme.tres::Theme::2458540496481994543::1698841665::0::1::::<><>::
+HelpScreen.gd::GDScript::-1::1698841665::0::1::::<>Control<>::
+HelpScreen.tscn::PackedScene::7025095545971933501::1698841665::0::1::::<><>::uid://bba62kapso2gh
+HelpScreenScene.tscn::PackedScene::4198593503045965801::1698841665::0::1::::<><>::uid://bba62kapso2gh
+Level.gd::GDScript::-1::1698841665::0::1::::Level<>Node2D<>::
+level.tscn::PackedScene::2275289470917870249::1698841665::0::1::::<><>::res://scenes/Level.gd<>uid://w6xlne4o2vuu
+LevelSelectScreen.gd::GDScript::-1::1698842081::0::1::::<>Control<>::
+LevelSelectScreen.tscn::PackedScene::8774780059861435978::1698842371::0::1::::<><>::uid://bba62kapso2gh::::res://ui/default_theme.tres<>res://scenes/LevelSelectScreen.gd<>uid://cnrvrjv77sfi8::::res://ui/buttons/SceneButton.tscn
+MainMenu.tscn::PackedScene::3103728150581549500::1698842331::0::1::::<><>::uid://bba62kapso2gh::::res://ui/default_theme.tres<>uid://cnrvrjv77sfi8::::res://ui/buttons/SceneButton.tscn<>uid://fubyocn7bs7j::::res://ui/buttons/QuitButton.tscn
+PauseMenu.gd::GDScript::-1::1698841665::0::1::::PauseMenu<>Control<>::
+::res://scenes/levels/::1698843843
+level_1.tscn::PackedScene::2976499045564012812::1698842331::0::1::::<><>::uid://7ofxkbuy7g7r::::res://scenes/level.tscn<>uid://be0uskwhj77q3::::res://interactables/Win.tscn
+level_2.tscn::PackedScene::4900134597222547151::1698842331::0::1::::<><>::uid://7ofxkbuy7g7r::::res://scenes/level.tscn<>uid://sxg8g60wx1gb::::res://interactables/floor_button.tscn<>uid://bkgeydfjgqk6n::::res://interactables/Door.tscn<>uid://be0uskwhj77q3::::res://interactables/Win.tscn
+level_3.tscn::PackedScene::4906478956096553680::1698842331::0::1::::<><>::uid://7ofxkbuy7g7r::::res://scenes/level.tscn<>uid://sxg8g60wx1gb::::res://interactables/floor_button.tscn<>uid://bkgeydfjgqk6n::::res://interactables/Door.tscn<>uid://be0uskwhj77q3::::res://interactables/Win.tscn
+::res://shared/::1698843843
+CloneHistory.gd::GDScript::-1::1698841665::0::1::::CloneHistory<>Node<>::
+CustomInput.gd::GDScript::-1::1698841665::0::1::::CustomInput<>Node<>::
+::res://ui/::1698843843
+default_theme.tres::Theme::2458540496481994543::1698841797::0::1::::<><>::
+::res://ui/buttons/::1698843843
+Button.tscn::PackedScene::729614382051492570::1698841665::0::1::::<><>::res://ui/buttons/ButtonUI.gd
+ButtonUI.gd::GDScript::-1::1698841665::0::1::::ButtonUI<>Button<>::
+LevelButton.gd::GDScript::-1::1698842369::0::1::::<>ButtonUI<>::
+LevelButton.tscn::PackedScene::4156253440409406064::1698841665::0::1::::<><>::res://ui/buttons/LevelButton.gd
+QuitButton.gd::GDScript::-1::1698841665::0::1::::<>Button<>::
+QuitButton.tscn::PackedScene::392336088367836729::1698841665::0::1::::<><>::res://ui/buttons/QuitButton.gd
+SceneButton.gd::GDScript::-1::1698841797::0::1::::<>ButtonUI<>::
+SceneButton.tscn::PackedScene::5721696678492572181::1698841665::0::1::::<><>::res://ui/buttons/SceneButton.gd

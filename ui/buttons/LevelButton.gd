@@ -8,5 +8,10 @@ extends ButtonUI
 func _on_pressed() -> void:
 	if level_path == null:
 		return
-	level_manager.level_path = level_path
+	print(level_path)
+	if level_path.ends_with(".remap"):
+		var formatted_name = level_path.trim_suffix('.remap')
+		level_manager.level_path = formatted_name
+	else:
+		level_manager.level_path = level_path
 	get_tree().change_scene_to_file("res://game.tscn")
