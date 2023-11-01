@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7dakdvvb1sun"]
+
+[ext_resource type="Theme" uid="uid://bba62kapso2gh" path="res://ui/default_theme.tres" id="1_lqbqf"]
+[ext_resource type="Script" path="res://scenes/HelpScreen.gd" id="2_fcc7j"]
+
+[node name="HelpScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_lqbqf")
+script = ExtResource("2_fcc7j")

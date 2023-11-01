@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0hk5fj15v8kq"]
+
+[ext_resource type="Script" path="res://ui/buttons/LevelButton.gd" id="1_j37pi"]
+
+[node name="LevelButton" type="Button"]
+custom_minimum_size = Vector2(200, 150)
+offset_right = 129.0
+offset_bottom = 82.0
+pivot_offset = Vector2(100, 75)
+text = "Level 1"
+script = ExtResource("1_j37pi")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

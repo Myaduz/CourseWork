@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnpxsdwbr7bv0"]
+
+[ext_resource type="PackedScene" uid="uid://7ofxkbuy7g7r" path="res://levels/level.tscn" id="1_1cuqo"]
+[ext_resource type="PackedScene" uid="uid://034wwpp5ujls" path="res://player/player.tscn" id="1_8f1hf"]
+[ext_resource type="Script" path="res://game.gd" id="1_v8ao8"]
+[ext_resource type="Script" path="res://LevelManager.gd" id="2_axb63"]
+[ext_resource type="PackedScene" uid="uid://bkop72mjtw43i" path="res://levels/clone_manager.tscn" id="2_x1n7f"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_v8ao8")
+
+[node name="CloneManager" parent="." instance=ExtResource("2_x1n7f")]
+
+[node name="LevelManager" type="Node2D" parent="."]
+script = ExtResource("2_axb63")
+
+[node name="TestLevel" parent="LevelManager" instance=ExtResource("1_1cuqo")]
+
+[node name="Player" parent="." instance=ExtResource("1_8f1hf")]
+position = Vector2(3, -4)
+
+[connection signal="hard_reset_clones" from="." to="CloneManager" method="_on_game_hard_reset_clones"]
+[connection signal="new_clone" from="." to="CloneManager" method="_on_game_new_clone"]
+[connection signal="overwrite_clone" from="." to="CloneManager" method="_on_game_overwrite_clone"]
+[connection signal="clone_count_change" from="LevelManager" to="CloneManager" method="_on_level_manager_clone_count_change"]

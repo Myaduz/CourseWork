@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://fubyocn7bs7j"]
+
+[ext_resource type="Script" path="res://ui/buttons/QuitButton.gd" id="1_f4ifl"]
+
+[node name="Quit" type="Button"]
+custom_minimum_size = Vector2(200, 120)
+offset_right = 200.0
+offset_bottom = 120.0
+pivot_offset = Vector2(98, 60)
+text = "Выйти"
+script = ExtResource("1_f4ifl")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

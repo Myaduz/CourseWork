@@ -1,0 +1,13 @@
+res://interactables/Door.tscn
+res://player/Player.gd
+res://player/player_crouch_collision.tres
+res://scenes/LevelSelectScreen.gd
+res://ui/buttons/SceneButton.gd
+res://clone/clone.gdshader
+res://assets/new_tile_set.tres
+res://interactables/floor_button.tscn
+res://scenes/levels/level_2.tscn
+res://scenes/levels/level_3.tscn
+res://scenes/levels/level_1.tscn
+res://autoload/clone_manager.tscn
+res://player/player.tscn

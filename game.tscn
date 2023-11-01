@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=3 uid="uid://cnpxsdwbr7bv0"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_tmxtq"]
+[ext_resource type="PackedScene" uid="uid://034wwpp5ujls" path="res://player/player.tscn" id="2_qrm7r"]
+[ext_resource type="Theme" uid="uid://bba62kapso2gh" path="res://ui/default_theme.tres" id="3_7mg0p"]
+[ext_resource type="Script" path="res://scenes/PauseMenu.gd" id="4_44ybr"]
+[ext_resource type="PackedScene" uid="uid://knov3p7nmjcc" path="res://ui/buttons/Button.tscn" id="5_n81t3"]
+[ext_resource type="PackedScene" uid="uid://cnrvrjv77sfi8" path="res://ui/buttons/SceneButton.tscn" id="5_u64b0"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_tmxtq")
+
+[node name="Player" parent="." instance=ExtResource("2_qrm7r")]
+position = Vector2(3, -4)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ThemeWrapper" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_7mg0p")
+
+[node name="UI" type="Control" parent="CanvasLayer/ThemeWrapper"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CloneCountLabel" type="Label" parent="CanvasLayer/ThemeWrapper/UI"]
+layout_mode = 0
+offset_right = 97.0
+offset_bottom = 26.0
+text = "Clones: 1337"
+
+[node name="PauseMenu" type="Control" parent="CanvasLayer/ThemeWrapper"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_44ybr")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/ThemeWrapper/PauseMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.407843)
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/ThemeWrapper/PauseMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/ThemeWrapper/PauseMenu/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Resume" parent="CanvasLayer/ThemeWrapper/PauseMenu/MarginContainer/VBoxContainer" instance=ExtResource("5_n81t3")]
+layout_mode = 2
+text = "Продолжить"
+
+[node name="Restart" parent="CanvasLayer/ThemeWrapper/PauseMenu/MarginContainer/VBoxContainer" instance=ExtResource("5_n81t3")]
+layout_mode = 2
+text = "Перезапуск"
+
+[node name="ToMenu" parent="CanvasLayer/ThemeWrapper/PauseMenu/MarginContainer/VBoxContainer" instance=ExtResource("5_u64b0")]
+layout_mode = 2
+text = "В меню"
+scene_path = "res://scenes/MainMenu.tscn"
+
+[connection signal="pressed" from="CanvasLayer/ThemeWrapper/PauseMenu/MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/ThemeWrapper/PauseMenu/MarginContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/ThemeWrapper/PauseMenu/MarginContainer/VBoxContainer/ToMenu" to="." method="_on_to_menu_pressed"]

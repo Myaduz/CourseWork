@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkhp7jitbbo5q"]
+
+[ext_resource type="Theme" uid="uid://bba62kapso2gh" path="res://ui/default_theme.tres" id="1_7ys07"]
+[ext_resource type="PackedScene" uid="uid://cnrvrjv77sfi8" path="res://ui/buttons/SceneButton.tscn" id="1_ckklm"]
+[ext_resource type="PackedScene" uid="uid://fubyocn7bs7j" path="res://ui/buttons/QuitButton.tscn" id="3_2r4se"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_7ys07")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.282353, 0.533333, 0.505882, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 32
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Cloner"
+horizontal_alignment = 1
+
+[node name="SelectLevel" parent="MarginContainer/VBoxContainer" instance=ExtResource("1_ckklm")]
+layout_mode = 2
+text = "Выбрать уровень"
+scene_path = "res://scenes/LevelSelectScreen.tscn"
+
+[node name="Help" parent="MarginContainer/VBoxContainer" instance=ExtResource("1_ckklm")]
+layout_mode = 2
+text = "Помощь"
+scene_path = "res://scenes/HelpScreenScene.tscn"
+
+[node name="Quit" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_2r4se")]
+layout_mode = 2

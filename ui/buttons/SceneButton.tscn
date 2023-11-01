@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnrvrjv77sfi8"]
+
+[ext_resource type="Script" path="res://ui/buttons/SceneButton.gd" id="1_a7sx5"]
+
+[node name="SceneButton" type="Button"]
+custom_minimum_size = Vector2(180, 120)
+offset_right = 111.0
+offset_bottom = 31.0
+pivot_offset = Vector2(90, 60)
+text = "Scene button"
+script = ExtResource("1_a7sx5")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

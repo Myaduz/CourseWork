@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://7ofxkbuy7g7r"]
+
+[ext_resource type="Script" path="res://scenes/Level.gd" id="1_qes44"]
+[ext_resource type="TileSet" uid="uid://w6xlne4o2vuu" path="res://assets/new_tile_set.tres" id="2_o0emv"]
+
+[node name="Level" type="Node2D" groups=["Level"]]
+script = ExtResource("1_qes44")
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = 10
+y_sort_enabled = true
+tile_set = ExtResource("2_o0emv")
+format = 2
+layer_0/name = "Background"
+layer_0/z_index = -10
+layer_1/name = "Foreground"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array()
+
+[node name="SpawnPoint" type="Marker2D" parent="."]

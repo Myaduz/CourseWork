@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://fuxsawwqjtr3"]
+
+[ext_resource type="PackedScene" uid="uid://034wwpp5ujls" path="res://player/player.tscn" id="1_yguna"]
+[ext_resource type="Script" path="res://clone/clone.gd" id="2_f8pew"]
+[ext_resource type="Shader" path="res://clone/clone.gdshader" id="3_13dp3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1wc1e"]
+resource_local_to_scene = true
+shader = ExtResource("3_13dp3")
+shader_parameter/color_override = Color(1, 1, 1, 1)
+
+[node name="Clone" groups=["Clone"] instance=ExtResource("1_yguna")]
+collision_layer = 8
+script = ExtResource("2_f8pew")
+color = Color(0.776471, 0.8, 0, 1)
+
+[node name="CollisionShape2D" parent="." index="0"]
+one_way_collision = true
+
+[node name="Camera2D" parent="." index="1"]
+enabled = false
+
+[node name="Sprite2D" parent="." index="3"]
+material = SubResource("ShaderMaterial_1wc1e")
+
+[node name="StaticBody2D" parent="." index="5"]
+collision_mask = 4
